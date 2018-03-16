@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Follow me on the road to Ironman 2018</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js"></script>
+  <script src="https://snapwidget.com/js/snapwidget.js"></script>
+
+</head>
+<body>
+  <a name="top"></a>
+  <div>
+    <img class="mySlides" src="jogging.jpg" style="width:100vw">
+    <img class="mySlides" src="swimmer.jpg" style="width:100vw">
+    <img class="mySlides" src="cycling.jpg" style="width:100vw">
+    <h1 id="tophead">Road to Ironman 2018</h1>
+    <h3 id="topheadsmall">Följ oss i träningen mot Ironman Kalmar</h3>
+    <img id="toplogo" src="ironman_logo.png">
+    <p id="countdown"></p>
+    <div class="wrapper"><button class="meny" onclick="window.location.href='#teamet'"><span>Teamet </span></button> <button class="meny" onclick="window.location.href='#ironman'"><span>Ironman? </span></button> <button class="meny" onclick="window.location.href='#sponsra'"><span>Sponsra </span></button>
+    </div>
+  </div>
+  <a name="teamet"></a>
+  <div class="sektion">
+   <div class="contentteamet">
+    <h1>Teamet</h1>
+    <a href="https://www.instagram.com/roadtoironman2018/" target="_blank"><h3><img src= "instagram_logo.png" height="35" width="35"> Följ oss på instagram</h3></a>
+    <!-- SnapWidget -->
+    <iframe src="https://snapwidget.com/embed/520182" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:35%; "></iframe><br>
+    <button class="backtotop" onclick="window.location.href='#top'"><span>Upp </span></button>
+  <a name="sponsra"></a>
+  </div>
+</div>
+<div class="sektion">
+  <div class="contentsponsra">
+    <h1>Sponsra oss!</h1>
+    <h3 id="sponsinnehåll">Vill ditt företag vara med och sponsra oss? Kontakta isåfall oss nedan så berättar vi mer.</h3>
+    <button onclick="contact();">&#9993; Kontakt</button>
+    <h3 id="sponsbolag">Stort tack till:</h3>
+    <a href="http://www.greenchoice.se" target="_blank"><img src="green_choice.png" style="width:200px"></a>
+    <a href="http://www.golfrebels.se" target="_blank"><img src="golf_rebels.png" style="width:150px"></a>
+    <a href="http://www.lexindesign.se" target="_blank"><img src="lexin_design.png" style="width:150px"></a>
+    <p>Green Choice, Lexindesign, Golf Rebels, Per Edström</p>
+    <button id="topspons" class="backtotop" onclick="window.location.href='#top'"><span>Upp </span></button>
+  </div>
+</div>
+<div id="ironmanbackground" class="sektion">
+ <div class="contentironman">
+  <a name="ironman"></a>
+  <h1>Vad är en Ironman?</h1>
+  <p>Ironman är en triathlontävling som täcker 3,86 km simning (2,4 miles), 180,2 km cykling (112 miles) och 42 195 m (ett maraton) löpning. Totalt 140.6 miles där av namnet Ironman 140.6</p>
+  <div class="container">
+   <div id="swimbar" class="bar"><span id="swimtext" class="swimset">.</span></div><div id="bikebar" class="bar"><span id="biketext" class="bikeset">.</span></div><div id="runbar" class="bar"><span id="runtext" class="runset">.</span></div>
+ </div>
+ <button id="topironman" class="backtotop" onclick="window.location.href='#top'"><span>Upp </span></button>
+</div>
+</div>
+<script>    
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var pics = document.getElementsByClassName("mySlides");
+    for (i = 0; i < pics.length; i++) {
+     pics[i].style.display = "none";  
+   }
+   myIndex++;
+   if (myIndex > pics.length) {myIndex = 1}    
+    pics[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000); // byt bild var 8de sek
+  }
+</script>
+</body>
+</html>
