@@ -1,0 +1,298 @@
+body, html {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+h1{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+h3{
+  font-size: 1.2vw;
+}
+p{
+  font-size: 1.1vw;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  color:#d62424;
+}
+#instagram{
+  height: 10px; 
+  width: 10px;
+  margin-right:2px;
+}
+img{
+  height: auto;
+  width: 50px;
+  margin-left: auto;
+  margin-right: 5px;
+}
+.mySlides {
+ position: relative;
+ margin-left: -50vw;
+ margin-top: -100px;
+ left: 50%;
+}
+
+.wrapper{
+  position: absolute;
+  top: 15%;
+  width:100%;
+  margin: auto
+}
+.meny{
+  font-size: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #d62424;
+  color:black;
+  border: none;
+  text-decoration: none;
+  padding:5px 10px 5px 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+}
+.meny span{
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+.meny span:after{
+  content: '\25BC';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.meny:hover span{
+  padding-right: 25px;
+}
+.meny:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+.meny:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#topspons{
+  margin-top: 2%;
+}
+#topironman{
+  margin-top: 35%;
+}
+.backtotop{
+  color:black;
+  background-color: white;
+  opacity: 0.7;
+  border-width: 2px;
+  border-style: dotted;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+  padding:2px 4px 2px 4px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+.backtotop span{
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+.backtotop span:after{
+  content: '\25B2';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.backtotop:hover span{
+  padding-right: 25px;
+}
+.backtotop:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+.backtotop:hover{
+  color:black;
+  background-color: white;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+
+}
+.sektion{
+  height: 120vh;
+}
+.contentironman{
+  padding-top: 15%;
+
+}
+.contentsponsra{
+  padding-top: 5%;
+}
+.contentteamet{
+  padding-top: 5%;
+}
+#sponsbolag{
+  padding-top: 10%;
+}
+#sponsinnehåll{
+  padding-top: 5%;
+}
+
+#tophead{
+  color: #d62424;
+  position: absolute;
+  top: 2%;
+  width:100%;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: .1em;
+  font-weight: 300;
+
+}
+#topheadsmall{
+  position: absolute;
+  top: 5%;
+  width:100%;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .1em;
+  font-weight: 300;
+}
+#toplogo{
+  position: absolute;
+  top: 6%;
+  display: block;
+  padding-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+}
+#countdown{
+  position: absolute;
+  top: 12%;
+  width:100%;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+#ironmanbackground{
+  color:white;
+  padding-top: 30px;
+  background-image: url("ironman_kalmar.jpg");
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+button{
+  font-size: 1.5vw;
+  margin-left: 5px;
+  margin-right: 5px;
+  color:black;
+  background-color: #d62424;
+  border: none;
+  text-decoration: none;
+  padding:5px 10px 5px 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+}
+button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.container {
+  margin:auto;
+  width: 90%;
+  opacity: 0.8;
+  padding-bottom: 30px;
+}
+
+.bar {
+  display:inline-block;
+  text-align: center; 
+  line-height: 40px; 
+  color: white;
+}
+.swimset{
+  color:#417fe2;
+
+}
+.bikeset{
+  color:#5f6775;
+}
+.runset{
+  color:#28825b;
+}
+.bartext{
+  font-size: 1.2vw;
+  color:white;
+
+}
+.swim {
+  animation-timing-function: ease-out;
+  width: 15%; background-color: #417fe2;
+  -webkit-animation: mymoveswim 5s; /* Safari 4.0 - 8.0 */
+  animation: mymoveswim 5s;
+} 
+.bike {
+  animation-timing-function: ease-out;
+  width: 50%; background-color: #5f6775;
+  -webkit-animation: mymovebike 3s; /* Safari 4.0 - 8.0 */
+  animation: mymovebike 3s;
+} 
+.run {
+  animation-timing-function: ease-out;
+  width: 30%; background-color: #28825b;
+  -webkit-animation: mymoverun 4s; /* Safari 4.0 - 8.0 */
+  animation: mymoverun 4s;
+} 
+
+
+@-webkit-keyframes mymoveswim {
+  from {width: 0%;}
+  to {width: 15%;}
+}
+
+/* Standard syntax */
+@keyframes mymoveswim {
+  from {width: 0%;}
+  to {width: 15%;}
+}
+
+@-webkit-keyframes mymovebike {
+  from {width: 0%;}
+  to {width: 50%;}
+}
+
+/* Standard syntax */
+@keyframes mymovebike {
+  from {width: 0%;}
+  to {width: 50%;}
+}
+
+@-webkit-keyframes mymoverun {
+  from {width: 0%;}
+  to {width: 30%;}
+}
+
+/* Standard syntax */
+@keyframes mymoverun {
+  from {width: 0%;}
+  to {width: 30%;}
+}

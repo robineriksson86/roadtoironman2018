@@ -44,7 +44,7 @@ function startAnimation(){
 function addText(){
   var t = setInterval(function() {
     if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-      document.getElementById("swimtext").innerHTML = "Simmning 3,86km";
+      document.getElementById("swimtext").innerHTML = "Simning 3,86km";
       document.getElementById("biketext").innerHTML = "Cykling: 18 Mil";
       document.getElementById("runtext").innerHTML = "Löpning: 42195 Meter";
       document.getElementById("swimtext").className = "bartext";
