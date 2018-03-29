@@ -34,16 +34,37 @@ function countDown(){
 }, 1000);
 }
 
+
+
 function startAnimation(){
-  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+  var width = window.innerWidth;
+  if(width < 450){
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("swimbar").className = "bar swim";
     document.getElementById("bikebar").className = "bar bike";
     document.getElementById("runbar").className = "bar run";
   }
+}else if(width < 800){
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    document.getElementById("swimbar").className = "bar swim";
+    document.getElementById("bikebar").className = "bar bike";
+    document.getElementById("runbar").className = "bar run";
+  }
+}else{
+  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+    document.getElementById("swimbar").className = "bar swim";
+    document.getElementById("bikebar").className = "bar bike";
+    document.getElementById("runbar").className = "bar run";
+  }
+
+} 
+
 }
 function addText(){
   var t = setInterval(function() {
-    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    var width2 = window.innerWidth;
+    if(width2 < 450){
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
       document.getElementById("swimtext").innerHTML = "Simning 3,86km";
       document.getElementById("biketext").innerHTML = "Cykling: 18 Mil";
       document.getElementById("runtext").innerHTML = "Löpning: 42195 Meter";
@@ -51,5 +72,25 @@ function addText(){
       document.getElementById("biketext").className = "bartext";
       document.getElementById("runtext").className = "bartext";
     }
+  }else if(width2 < 800){
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      document.getElementById("swimtext").innerHTML = "Simning 3,86km";
+      document.getElementById("biketext").innerHTML = "Cykling: 18 Mil";
+      document.getElementById("runtext").innerHTML = "Löpning: 42195 Meter";
+      document.getElementById("swimtext").className = "bartext";
+      document.getElementById("biketext").className = "bartext";
+      document.getElementById("runtext").className = "bartext";
+    }
+
+  }else{
+    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+      document.getElementById("swimtext").innerHTML = "Simning 3,86km";
+      document.getElementById("biketext").innerHTML = "Cykling: 18 Mil";
+      document.getElementById("runtext").innerHTML = "Löpning: 42195 Meter";
+      document.getElementById("swimtext").className = "bartext";
+      document.getElementById("biketext").className = "bartext";
+      document.getElementById("runtext").className = "bartext";
+    }
+  }
   },3000);
 }

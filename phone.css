@@ -7,10 +7,10 @@ h1{
   text-transform: uppercase;
 }
 h3{
-  font-size: 1.2vw;
+  font-size: 15px;
 }
 p{
-  font-size: 1.1vw;
+  font-size: 8px;
 }
 a{
   text-decoration: none;
@@ -84,7 +84,7 @@ img{
   margin-top: 2%;
 }
 #topironman{
-  margin-top: 35%;
+  margin-top: 2%;
 }
 .backtotop{
   color:black;
@@ -129,10 +129,10 @@ img{
 
 }
 .sektion{
-  height: 120vh;
+  height: 50vh;
 }
 .contentironman{
-  padding-top: 15%;
+  padding-top: 5%;
 
 }
 .contentsponsra{
@@ -142,7 +142,7 @@ img{
   padding-top: 5%;
 }
 #sponsbolag{
-  padding-top: 10%;
+  padding-top: 5%;
 }
 #sponsinnehåll{
   padding-top: 5%;
@@ -226,7 +226,7 @@ button:hover{
 .bar {
   display:inline-block;
   text-align: center; 
-  line-height: 40px; 
+  line-height: 30px; 
   color: white;
 }
 .swimset{
@@ -240,7 +240,7 @@ button:hover{
   color:#28825b;
 }
 .bartext{
-  font-size: 1.2vw;
+  font-size: 6px;
   color:white;
 
 }
